@@ -1,0 +1,16 @@
+.dropdown {
+}
+
+.dropdownSelect {
+  background-color: rgb(0, 115, 198);
+  color: white;
+  padding: 6px 18px;
+  margin: 0;
+}
+
+.option {
+  color: rgb(87, 87, 87);
+  padding: 4px 12px;
+  background-color: white;
+  cursor: pointer;
+}

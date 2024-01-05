@@ -1,0 +1,356 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(59, 59, 59);
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+.heading {
+  width: 95%;
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainHeading {
+  font-size: 22px;
+}
+
+.subHeading {
+  font-size: 13px;
+  margin-left: 12px;
+  color: #8f8f8f;
+}
+
+.rightHeading {
+  display: flex;
+  gap: 24px;
+}
+
+.content {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 34%;
+  min-height: 250px;
+  height: 650px;
+  background-color: white;
+  box-shadow: 0 0 4px rgb(194, 194, 194);
+}
+
+.heading2 {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(89, 89, 89);
+  font-size: 14px;
+  gap: 18px;
+  align-items: center;
+  margin: 6px 12px;
+}
+
+.relatedButton {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 2px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.relatedButton:hover {
+  background-color: #f4f4f4;
+}
+
+.detailButton {
+  color: rgb(0, 134, 216);
+  border: 1px solid rgb(0, 134, 216);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 8px;
+  position: relative;
+}
+
+.detail {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  margin-top: 40px;
+  box-shadow: 0 0 6px gray;
+  border-radius: 8px;
+  padding: 6px;
+  color: gray;
+  background-color: white;
+}
+
+.detailButton:hover {
+  background-color: rgb(0, 134, 216);
+  color: white;
+}
+.settingButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: gray;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.settingButton:hover {
+  background-color: rgb(102, 102, 102);
+}
+
+.settingOptions {
+  position: absolute;
+  right: 0;
+  margin-top: 82px;
+  width: 180px;
+  box-shadow: 0 0 6px gray;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.settingOption {
+  display: flex;
+  gap: 8px;
+  color: gray;
+  margin: 4px;
+  font-size: 13px;
+}
+
+.bottomBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legendButton {
+  color: white;
+  background-color: rgb(174, 174, 174);
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 5px 16px;
+  margin: 8px 12px;
+}
+.legendButton:hover {
+  background-color: rgb(123, 123, 123);
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+}
+
+.zoomBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(0, 134, 216);
+  gap: 6px;
+  border-radius: 4px;
+}
+
+.zoomBox > span {
+  font-size: 12px;
+}
+.zoomController {
+  color: white;
+  background-color: rgb(0, 134, 216);
+  cursor: pointer;
+}
+
+.zoomController:hover {
+  background-color: rgb(0, 106, 173);
+}
+.zoomIcon {
+  background-color: rgb(0, 134, 216);
+  color: white;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.zoomIcon:hover {
+  background-color: rgb(0, 112, 182);
+}
+
+.rightContent {
+  width: 64%;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+}
+
+.container2 {
+  display: flex;
+  width: 100%;
+  margin: 24px 0;
+  color: rgb(98, 98, 98);
+  justify-content: space-between;
+}
+
+.graphContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  width: 65%;
+  overflow: auto;
+}
+
+.gc {
+  border: 1px solid rgb(216, 216, 216);
+  width: 98%;
+  background-color: white;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.graphHeading {
+  width: 90%;
+  margin: 12px 0;
+}
+
+.tagContainer {
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 4px;
+  max-height: 350px;
+  width: 33%;
+  background-color: white;
+}
+
+.heading3 {
+  font-weight: 600;
+  margin: 16px 0 16px 16px;
+}
+
+.dataGrid2 {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 20px;
+  max-height: 350px;
+  /* overflow-y: auto; */
+}
+
+@media (max-width: 1150px) and (min-width: 1001px) {
+  .dataGrid {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 1000px) and (min-width: 801px) {
+  .dataGrid {
+    grid-template-columns: auto auto;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+
+  .tagContainer {
+    width: 100%;
+  }
+  .graphContainer {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .rightHeading {
+    margin-top: 24px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftContent {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .rightContent {
+    width: 100%;
+  }
+
+  .dataGrid {
+    margin-bottom: 24px;
+    grid-template-columns: auto auto auto;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+
+  .tagContainer {
+    width: 100%;
+  }
+  .graphContainer {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .mainHeading {
+    font-size: 20px;
+  }
+  .subHeading {
+    font-size: 12px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftContent {
+    width: 92%;
+    margin-bottom: 24px;
+  }
+
+  .rightContent {
+    width: 92%;
+  }
+
+  .dataGrid {
+    margin-bottom: 24px;
+    grid-template-columns: auto auto;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+
+  .tagContainer {
+    width: 100%;
+  }
+  .graphContainer {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
